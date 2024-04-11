@@ -1,0 +1,30 @@
+@keyframes moveTruckRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes moveTruckLeft {
+    0% {
+        transform: translateX(100%) scaleX(-1);
+    }
+    100% {
+        transform: translateX(-100%) scaleX(-1);
+    }
+}
+
+.pendente-icon {
+    animation: moveTruckLeft 5s linear infinite; /* Altere a duração da animação conforme necessário */
+}
+
+.truck-icon {
+    transform: scaleX(-1); /* Inverte o ícone horizontalmente */
+}
+
+table {
+    width: 100%; /* Definir a largura da tabela como 80% da largura do contêiner */
+    height: 50px; /* Definir a altura da tabela como 300 pixels */
+}
